@@ -52,7 +52,7 @@ message.photoType = (text, url_photo, label, url_button) => {
         }
       },
       keyboard: {
-        type: 'buttons',sercice
+        type: 'buttons',
         buttons: message.buttons
       }
     }
