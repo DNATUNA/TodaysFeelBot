@@ -22,12 +22,16 @@ Bot.choseMenu = (req, content, callback) => {
 
     case "Photo":
       //callback(null, message.baseType("당신입니다."));
-      callback(null, message.photoType("This is text", "https://placekitten.com/720/630", "This is label", "http://www.samsung.com/sec/") );
+      callback(null, message.photoTypeWithButtons("This is text", "https://placekitten.com/720/630", "This is label", "http://www.samsung.com/sec/", message.buttonsPhoto));
       break;
 
     /* Photo */
+    case "Sub text":
+      callback(null, message.baseTypeWithButtons("This is sub text.", message.buttonsPhoto));
+      break;
+      
     case "Go up":
-      callback(null, message.baseType("This is text."));
+      callback(null, message.baseType(""));
       break;
       
     default:
