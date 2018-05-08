@@ -2,10 +2,20 @@
  * Created by cheese on 2017. 2. 10..
  */
 
+/** menu tree
+  Text
+  Photo
+    |- Sub text
+    |- Go up
+*/
+
 let message = {};
 
-message.buttons = [ "왕좌의 게임은 무엇인가?",
-                    "왕좌의 게임에서 다음에 죽을 사람은?"];
+message.buttons = [ "Text",
+                    "Photo"];
+
+message.buttonsPhoto = [ "Sub text",
+                          "Go up"];
 
 message.buttonsType = () => {
     return {
