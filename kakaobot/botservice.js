@@ -31,7 +31,7 @@ Bot.choseMenu = (req, content, callback) => {
       break;
       
     case "Go up":
-      callback(null, message.baseType(""));
+      callback(null, message.baseType("This is home."));
       break;
       
     default:
