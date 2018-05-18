@@ -11,8 +11,8 @@
 
 let message = {};
 
-message.buttons = [ "Text",
-                    "Photo"];
+message.buttons = [ "안녕~",
+                    "관리자"];
 
 message.buttonsPhoto = [ "Sub text",
                           "Go up"];
