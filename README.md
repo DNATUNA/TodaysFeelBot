@@ -1,25 +1,17 @@
-Welcome to Glitch
+당신의 기분은 오픈소스 입니다.
 =================
 
-Click `Show` in the header to see your app live. Updates to your code will instantly deploy and update live.
+제 프로젝트는 **Glitch** 에서 코딩과 테스트를 하고 우분투에서 서버를 돌리는 형식으로 진행하고 있습니다.
 
-**Glitch** is the friendly community where you'll build the app of your dreams. Glitch lets you instantly create, remix, edit, and host an app, bot or site, and you can invite collaborators or helpers to simultaneously edit code with you.
-
-Find out more [about Glitch](https://glitch.com/about).
+한이음 프로젝트이기 때문에 한이음에서 서버 지원을 받고 있고 nice295(이규호) 멘토분의 도움 받으며 진행하고 있습니다.
 
 
-Your Project
+Intro Project
 ------------
 
-On the front-end,
-- edit `public/client.js`, `public/style.css` and `views/index.html`
-- drag in `assets`, like images or music, to add them to your project
-
-On the back-end,
-- your app starts at `server.js`
-- add frameworks and packages in `package.json`
-- safely store app secrets in `.env` (nobody can see this but you and people you invite)
-
+'당신의 기분은?'은 AI 카카오 챗봇으로 NLP 기능을 탑재하고 있어 사용자의 말을 분석하여 적절한 대답을 해줄 수 있는 챗봇입니다.
+기능은 사용자와 대화를 나누며 사용자의 기분을 파악하고 그에 맞는 노래를 추천해주는 챗봇입니다.
+이 프로젝트는 개인 프로젝트가 아니라 팀 프로젝트이기 때문에 앞으로 다른 팀원이 만든 챗봇과 결합할 수 있도록 설계할 생각입니다.
 
 Made by [Fog Creek](https://fogcreek.com/)
 -------------------
