@@ -16,21 +16,25 @@ Bot.choseMenu = (req, content, callback) => {
 
   switch (content) {
     /* top */
-    case "안녕~":
+    case "소개":
       callback(null, message.baseType("안녕하세요! '당신의 기분은'입니다. 오늘 하루에 있었던 일에 대해서 말해주세요^^"));
       break;
-
-    case "관리자":
-      //callback(null, message.baseType("당신입니다."));
-      callback(null, message.photoTypeWithButtons("제 사진입니다", "https://scontent-icn1-1.xx.fbcdn.net/v/t1.0-9/30729878_1159227237553073_8206804884698734600_n.jpg?_nc_cat=0&_nc_eui2=AeE-agDy7x09z1kt6rcYBTLx7GbmcIMsvH5AD6zBdcZK_g2spsiN4W74fEWTyorQajyZXajRhxAbzzrCHOkPNtMtz-QJZSylt_bFi6hVG9qObg&oh=ca0c83f4b05ab91bfdbf5fbe3e680184&oe=5B91D4C4", "관리자입니다^^", "https://www.facebook.com/profile.php?id=100003974223037", message.buttonsPhoto));
+      
+    // 시작메뉴
+    case "시작하기":
+      callback(null, message.buttonsTypeWithButtons("오늘 하루는 어떠셨나요? 당신의 이야기를 들려주세요ㅎㅎ.", message.startButtons));
       break;
 
-    /* Photo */
-    case "너무 잘생겼어요^^":
-      callback(null, message.baseTypeWithButtons("맞습니다.ㅎㅎ", message.buttonsPhoto));
+    /* startMenu */
+    case "기뻐요!":
+      callback(null, message.buttonsTypeWithButtons("저두 오늘 기분이 좋답니다^^ 어떤 일이 있으셨나요?", message.startButtons));
       break;
       
-    case "홈으로":
+    case "슬퍼요 ㅠ":
+      callback(null, message.buttonsTypeWithButtons("저런... 오늘 슬픈 일이 있으셨어요?", message.startButtons));
+      break;
+      
+    case "처음으로":
       callback(null, message.baseType("홈 입니다."));
       break;
       

@@ -11,16 +11,45 @@
 
 let message = {};
 
-message.buttons = [ "안녕~",
-                    "관리자"];
+//버튼 이름 정리
+message.mainButtons = [ "소개",
+                    "시작하기"];
 
-message.buttonsPhoto = [ "너무 잘생겼어요^^",
-                          "홈으로"];
+message.buttonsPhoto = [ ];
 
+message.startButtons = [ "기뻐요!",
+                          "슬퍼요 ㅠ",
+                           "처음으로"];
+
+
+//버튼 기능 구현부
 message.buttonsType = () => {
     return {
         type: 'buttons',
-        buttons: message.buttons
+        buttons: message.mainButtons
+    }
+};
+
+message.buttonsTypeWithButtons = (text, buttons) => {
+    return {
+        message: {
+            text: text,
+        },
+        keyboard: {
+            type: 'buttons',
+            buttons: buttons
+        }
+    }
+};
+
+message.buttonsTypeText = (text) => {
+    return {
+        message: {
+            text: text,
+        },
+        keyboard: {
+            type: 'text',
+        }
     }
 };
 
@@ -31,7 +60,7 @@ message.baseType = (text) => {
         },
         keyboard: {
             type: 'buttons',
-            buttons: message.buttons
+            buttons: message.mainButtons
         }
     }
 };
@@ -77,7 +106,7 @@ message.photoType = (text, url_photo, label, url_button) => {
       },
       keyboard: {
         type: 'buttons',
-        buttons: message.buttons
+        buttons: message.mainButtons
       }
     }
 };
@@ -114,7 +143,7 @@ message.messageButtonType = (text, label, url_button) => {
       },
       keyboard: {
         type: 'buttons',
-        buttons: message.buttons
+        buttons: message.mainButtons
       }
     }
 };
